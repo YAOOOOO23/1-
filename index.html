@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>临县红枣｜项目缘起与问题发现</title>
+<style>
+:root{--red:#782e2b;--ink:#302b27;--muted:#796e63;--paper:#faf6ec;--rule:#d9cbbb}
+*{box-sizing:border-box}body{margin:0;background:#e4ded3;color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif}.toolbar{max-width:1450px;margin:20px auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-size:13px;color:#62594f}.toolbar button{border:0;background:var(--red);color:white;padding:10px 20px;border-radius:5px;cursor:pointer}.page{max-width:1450px;margin:0 auto 30px;background:var(--paper);padding:36px 42px;box-shadow:0 8px 35px #382d2220}.eyebrow{font-size:11px;letter-spacing:3px;color:var(--red);margin-bottom:10px}header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--red);padding-bottom:18px;margin-bottom:22px}h1{font-size:32px;letter-spacing:2px;margin:0 0 7px;font-weight:600}.subtitle{font-size:13px;color:var(--muted)}.folio{font-size:45px;color:var(--red);font-family:Georgia,serif}.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.column+.column{border-left:1px solid var(--rule);padding-left:25px}p{font-size:12px;line-height:1.88;margin:0 0 11px;text-align:justify}h2{font-size:15px;color:var(--red);margin:0 0 14px;letter-spacing:1px}.question{font-size:15px;line-height:1.7;color:var(--red);padding:12px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:14px 0}.data{display:flex;gap:14px;background:#eee4d7;padding:13px;margin:12px 0 15px}.data>div{flex:1}.data strong{display:block;color:var(--red);font-size:27px;font-family:Georgia,serif}.data span{font-size:10px;line-height:1.5;color:var(--muted)}strong{font-weight:650}sup{font-size:9px;color:var(--red)}a{color:var(--red);text-decoration:none}a:hover{text-decoration:underline}.notes{margin-top:20px;padding-top:12px;border-top:1px solid var(--rule);display:grid;grid-template-columns:1.1fr 1fr;gap:25px}.notes h3{margin:0 0 6px;font-size:11px;color:var(--red)}.notes p,.notes li{font-size:9px;line-height:1.65;margin:0 0 3px}.sources{margin:0;padding-left:18px;columns:2;column-gap:16px}.sources li{break-inside:avoid}.end{font-size:13px;color:var(--red);font-weight:bold;margin-top:12px}
+@page{size:A3 landscape;margin:10mm}@media print{body{background:white}.toolbar{display:none}.page{max-width:none;width:400mm;height:277mm;margin:0;padding:9mm 10mm;box-shadow:none;overflow:visible;break-after:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}h1{font-size:29px}header{margin-bottom:17px;padding-bottom:14px}.columns{gap:24px}p{font-size:11.5px;line-height:1.8;margin-bottom:9px}.notes{margin-top:14px}.notes p,.notes li{font-size:8.5px}.data{margin:10px 0 12px}}
+@media screen and (max-width:950px){.page{padding:25px}.columns{grid-template-columns:1fr}.column+.column{border-left:0;border-top:1px solid var(--rule);padding:20px 0 0}.notes{grid-template-columns:1fr}p{font-size:14px}.toolbar{gap:15px}h1{font-size:26px}}
+.icon{width:21px;height:21px;vertical-align:-5px;margin-right:7px;color:var(--red);fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}.sprite{position:absolute;width:0;height:0;overflow:hidden}.factor{display:inline-flex;align-items:center;white-space:nowrap;color:var(--red);margin-top:3px}.factor .icon{width:18px;height:18px;margin-right:5px}.feature{padding:12px 13px 10px;background:#f0e8dc;border-radius:6px;border:1px solid #e1d4c3;break-inside:avoid}.feature>strong:first-child{display:block;color:var(--red);font-size:13px;margin-bottom:5px}.challenge{background:#f4e8e2;border-color:#e5cfc3}.column h2{display:flex;align-items:center}.column h2 .icon{width:23px;height:23px}.pathway{display:flex;gap:5px;align-items:center;justify-content:space-between;margin:0 0 16px;border-bottom:1px solid var(--rule);padding-bottom:12px;color:var(--red);font-size:10px;letter-spacing:.4px}.pathway span{display:flex;align-items:center;gap:3px}.pathway .icon{width:16px;height:16px;margin:0}.pathway b{color:#ab9280;font-weight:400}.section-label{display:block;font-size:10px;letter-spacing:2px;color:#92715f;margin-bottom:5px}@media print{.feature{padding:9px 11px 8px}.feature>strong:first-child{font-size:12px}.pathway{margin-bottom:12px;padding-bottom:9px}.factor .icon{width:16px;height:16px}.column h2 .icon{width:20px;height:20px}}@media(max-width:950px){.pathway{flex-wrap:wrap;gap:10px;font-size:12px}}
+.quality-factor{margin:17px 0 13px;break-inside:avoid}.quality-factor h3{display:flex;align-items:center;gap:10px;font-size:23px;font-weight:800;line-height:1.3;color:var(--red);margin:0 0 9px;letter-spacing:.5px}.quality-factor h3 .icon{width:34px;height:34px;stroke-width:1.8;margin:0}.quality-factor p{margin:0;padding-left:44px}@media print{.quality-factor{margin:12px 0 10px}.quality-factor h3{font-size:20px;margin-bottom:6px}.quality-factor h3 .icon{width:29px;height:29px}.quality-factor p{padding-left:39px}}/* 统一品质因素与中栏标题层级；仅右栏问题保留信息卡 */
+.quality-factor{margin:12px 0 11px}
+.quality-factor h3{gap:7px;font-size:13px;font-weight:650;line-height:1.6;margin:0 0 5px;letter-spacing:0}
+.quality-factor h3 .icon{width:21px;height:21px;stroke-width:1.7}
+.quality-factor p{padding-left:0}
+.feature:not(.challenge){padding:0;border:0;border-radius:0;background:transparent;margin:0 0 15px}
+@media print{
+.quality-factor{margin:10px 0 9px}
+.quality-factor h3{font-size:12px;margin-bottom:5px}
+.quality-factor h3 .icon{width:21px;height:21px}
+.quality-factor p{padding-left:0}
+.feature:not(.challenge){padding:0;margin-bottom:12px}
+}/* 两页共用顶部标签导航 */
+.toolbar{max-width:1450px;margin:16px auto;padding:0 12px;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.page-tabs{display:flex;gap:6px;padding:5px;background:#f7f2e9;border:1px solid #d9cbbb;border-radius:12px;box-shadow:0 2px 8px #382d2209}
+.page-tab{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border-radius:8px;color:#796e63;font-size:13px;font-weight:600;line-height:1.4;white-space:nowrap;transition:background .15s,color .15s}
+.page-tab:hover{background:#eae0d3;color:#782e2b;text-decoration:none}
+.page-tab[aria-current="page"]{background:#782e2b;color:#fff;box-shadow:0 2px 5px #782e2b20}
+.page-tab .tab-num{font-family:Georgia,serif;font-size:14px;opacity:.7}
+.toolbar .print-action{background:#f7f2e9;color:#782e2b;border:1px solid #d9cbbb;border-radius:9px;padding:10px 15px;font-size:12px}
+.page-tab:focus-visible,.print-action:focus-visible{outline:2px solid #782e2b;outline-offset:3px}
+@media print{.toolbar{display:none}}
+@media screen and (max-width:550px){.toolbar{padding:0 10px;gap:9px}.page-tabs{flex:1}.page-tab{padding:9px 11px;font-size:12px;gap:5px;flex:1;justify-content:center}.toolbar .print-action{margin-left:auto}}</style>
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></symbol>
+<symbol id="i-temp" viewBox="0 0 24 24"><path d="M9 14.5V5a3 3 0 0 0-6 0v9.5a5 5 0 1 0 6 0Z"/><path d="M6 9v9m9-13v5m-2.5-2.5h5M15 15h5m-5 4h3"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3C9 2 3 6 5 13c2 6 13 6 15-10ZM4 21 15 10M10 15v-5m0 5h5"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M10 5h4m-4 14h4M8 9h2l1 5h5l1-4h-6"/></symbol>
+<symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 9 14-5v14L3 13V9Zm3 5 2 7h3l-2-6m12-7 2-2m-2 6h2m-2 4 2 2"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 5h12v12H2V5Zm12 5h5l3 4v3h-8m4-7v4h4"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="6" r="3"/><path d="M3 20v-4a6 6 0 0 1 12 0v4m3-12a3 3 0 0 1 0 6m0 3a4 4 0 0 1 4 4M7 16v5m4-5v5"/></symbol>
+<symbol id="i-road" viewBox="0 0 24 24"><path d="m3 21 5-18m8 0 5 18M12 3v3m0 3v3m0 3v3m0 3v1"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15 15 7 7"/></symbol>
+<symbol id="i-fruit" viewBox="0 0 24 24"><path d="M16 5C11 1 3 9 4 16c1 8 12 6 15-1 2-4 1-8-3-10ZM13 5c-1-4 2-4 5-4m-7 8c-3 1-4 4-4 6"/></symbol>
+</defs></svg>
+<div class="toolbar"><nav class="page-tabs" aria-label="项目页面"><a class="page-tab" href="index.html" aria-current="page"><span class="tab-num">01</span>第一页｜项目缘起</a><a class="page-tab" href="page-2.html"><span class="tab-num">02</span>第二页｜枣农调研</a><a class="page-tab" href="page-3.html"><span class="tab-num">03</span>第三页｜产品构想</a></nav><button class="print-action" onclick="window.print()">打印 / 保存为 PDF</button></div>
+<main class="page">
+<header><div><div class="eyebrow">LINXIAN JUJUBE · PROJECT ORIGIN</div><h1>从一颗红枣开始</h1><div class="subtitle">项目缘起与问题发现 · 临县红枣</div></div><div class="folio">01</div></header>
+<nav class="pathway" aria-label="本页阅读顺序"><span><svg class="icon"><use href="#i-fruit"/></svg>喜爱红枣</span><b>→</b><span><svg class="icon"><use href="#i-search"/></svg>发现成分特色</span><b>→</b><span><svg class="icon"><use href="#i-sun"/></svg>了解品质因素</span><b>→</b><span><svg class="icon"><use href="#i-phone"/></svg>对照市场做法</span><b>→</b><span><svg class="icon"><use href="#i-people"/></svg>追问产业问题</span></nav>
+<div class="columns">
+<section class="column"><h2><svg class="icon" aria-hidden="true"><use href="#i-fruit"/></svg>认识红枣，发现临县</h2>
+<p>红枣是一种兼具食用与传统药用价值的果实，在中国有着悠久的历史。它既是人们熟悉的食物，也承载着调养身体、追求健康的期待。而我个人，一直非常喜欢红枣。<a href="#s1">[1]</a></p>
+<p>在一次偶然的机会下，我了解到了山西省吕梁市的临县红枣。</p>
+<p>最初吸引我的，是一篇报道中提到的物质——<strong>环磷酸腺苷，简称cAMP</strong>。我查到，细胞实验发现，增强cAMP信号能够促进<strong>促红细胞生成素，也就是EPO的合成与释放</strong>；而EPO是一种促进红细胞生成的重要激素。这让我开始关注红枣中的这种成分。<sup>①</sup> <a href="#s2">[2]</a><a href="#s3">[3]</a></p>
+<p>那篇报道提到，临县红枣每100克中的cAMP含量高达<strong>210毫克</strong>。我继续查找其他红枣的数据，发现另一项研究中的甘肃LZ红枣样品，每100克含量为<strong>8.3毫克</strong>。把两份资料记录的数值放在一起，后者约为前者的<strong>4%</strong>。这样的成分特点，让我对临县红枣产生了兴趣，也想进一步了解它。<sup>②</sup> <a href="#s4">[4]</a><a href="#s5">[5]</a></p>
+<div class="data"><div><strong>210</strong><span>毫克 / 100克<br>临县红枣 · 报道数值</span></div><div><strong>8.3</strong><span>毫克 / 100克<br>甘肃LZ样品 · 论文实测</span></div><div><strong>≈4%</strong><span>两份资料数值之比<br>非同条件产地比较</span></div></div>
+<p class="question">于是，我开始追问：<br><strong>临县红枣为什么会有这样的品质？</strong></p>
+<p>随着了解深入，我关注到了几个因素。</p>
+<div class="quality-factor"><h3><svg class="icon" aria-hidden="true"><use href="#i-sun"/></svg>充足的光照</h3><p>临县所在的吕梁地区日照充足，为枣树生长提供了条件。<a href="#s6">[6]</a></p></div>
+<div class="quality-factor"><h3><svg class="icon" aria-hidden="true"><use href="#i-temp"/></svg>明显的昼夜温差</h3><p>这是当地红枣生长环境的重要特点。<a href="#s6">[6]</a></p></div>
+<div class="quality-factor"><h3><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg>土壤与栽培条件</h3><p>临县红枣的地理标志保护要求，对海拔、土层厚度、土壤酸碱度，以及施肥、修剪和采收等都有明确规定。<sup>③</sup> <a href="#s7">[7]</a></p></div>
+<p>临县红枣本身也具有核小、皮薄、肉厚、酸甜适口的特点，地理标志产品的总糖指标达到60%以上。越了解，我越觉得，这是一种值得被更多人认识的地方特产。<a href="#s7">[7]</a></p>
+</section>
+<section class="column"><h2><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>好品质，为什么仍打不开市场？</h2>
+<p>然而，继续了解之后，我却发现，<strong>拥有这些品质的临县红枣，仍然面临打不开更广阔市场的困境。</strong><a href="#s8">[8]</a></p>
+<p class="question">为什么一种品质出色的红枣，却仍然面临销售与知名度上的困难？同样是红枣，为什么有些产地能够进入更广阔的市场？</p>
+<p>带着这个问题，我开始关注卖得好的红枣背后的营销方式。在新疆的一些产区，我看到了三个相互配合的环节。</p>
+<p class="feature"><strong><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>第一，是电商。</strong>线上店铺和直播带货，让产地产品直接接触全国消费者。新疆兵团二二四团2024年电商销售额达到2.8亿元，电商从业人数超过600人，形成了支持当地农产品销售的力量。<sup>④</sup> <a href="#s9">[9]</a></p>
+<p class="feature"><strong><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg>第二，是政府推介与市场开拓。</strong>新疆通过援疆机制，在北京、上海、广州等城市建设了60个销售分仓，并组织红枣企业参加专业展销会、博览会，帮助产品进入更广泛的市场。<a href="#s10">[10]</a></p>
+<p class="feature"><strong><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>第三，是仓储与物流。</strong>二二四团引进京东、邮政等快递物流企业，建设现代化仓储配送中心，让线上推广带来的订单，有相应的配送能力承接。<a href="#s9">[9]</a></p>
+</section>
+<section class="column"><h2><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg>回到临县，追问问题</h2>
+<p>再回到临县，这些销售方式所需要的人力、渠道与基础条件，却仍然面临一些制约。</p>
+<p class="feature challenge"><strong><svg class="icon" aria-hidden="true"><use href="#i-people"/></svg>首先，是枣农老龄化。</strong>2025年山西省林草局资料显示，临县60岁以上枣农占比超八成。与此同时，近七成枣地呈碎块化分布，机械化程度低，种植和管理仍然需要较多人工投入。老龄化的劳动群体面对分散的枣地，生产、管护与采收的压力由此叠加，人工成本也成为产业发展的关键瓶颈。<a href="#s11">[11]</a></p>
+<p class="feature challenge"><strong><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>其次，是人才流失与电商发展乏力。</strong>2026年的高校实地调研记录指出，当地乡村人才流失严重，产业发展缺乏活力，线上电商渠道仍需进一步发展，新业态发展滞后。同时，品牌知名度低、区域辨识度不足，使临县红枣即使拥有自身特色，也不容易被消费者清楚认识。<a href="#s8">[8]</a></p>
+<p class="feature challenge"><strong><svg class="icon" aria-hidden="true"><use href="#i-road"/></svg>再者，是山地与道路条件带来的运输限制。</strong>当地特殊的山地地形，给种植、管护和采收带来现实难题，也使产地道路成为连接枣农与外部市场的重要环节。2026年的地方报道提到，部分村庄仍需通过道路建设改善出行和红枣外销条件。对于这些村庄而言，红枣能否方便地运出去，仍然与道路条件紧密相关。<sup>⑤</sup> <a href="#s8">[8]</a><a href="#s12">[12]</a></p>
+<p>从最初对红枣的喜爱，到被临县红枣的品质吸引，再到看见它背后的产业处境，我开始希望：</p>
+<p class="question"><strong>从产品设计的视角出发，把这些问题逐项梳理，并寻找相应的改善方式。</strong></p>
+</section></div>
+<footer class="notes"><div><h3>资料标注</h3>
+<p>① cAMP与EPO的联系有细胞实验依据，尚不能直接证明食用红枣中的cAMP能在人身上产生同样效果。</p>
+<p>② 210毫克为报道转述，原始检测报告尚未取得；8.3毫克为论文干粉样品实测。“约4%”仅为两份资料所载数值的比例，尚未完成同条件比较。</p>
+<p>③ 产地环境与栽培条件有出处，但它们与高cAMP含量的具体因果关系尚未核实。</p>
+<p>④ 2.8亿元是二二四团电商销售总额，并非红枣单一品类销售额。</p>
+<p>⑤ 道路资料反映部分村庄的情况，尚未取得近期全县运输成本、破损率的量化数据。</p>
+</div><div><h3>来源索引 · 点击查看原文</h3><ol class="sources">
+<li id="s1"><a href="https://www.cmro.gov.hk/html/gb/useful_information/public_health/publication/Interesting_Chinese_Herbs_2.html">香港卫生署：趣谈中药（二）</a></li>
+<li id="s2"><a href="https://www.jstage.jst.go.jp/article/jpnjurol1989/88/9/88_9_778/_article/-char/en">cAMP与EPO：细胞实验，1997</a></li>
+<li id="s3"><a href="https://www.sciencedirect.com/science/article/pii/S1570023215301963">红枣复方与EPO研究，2016</a></li>
+<li id="s4"><a href="https://tytv5-web.sxtygdy.com/cms/rmt2018_html/60/60tytx/60tytxml/tt/zdzx2/1915798.shtml">山西日报：一颗小枣的“72变”</a></li>
+<li id="s5"><a href="https://www.sciengine.com/doi/pdfView/31AF2E661BC44D9CA27230575EA3B061">北方红枣cAMP测定，2020，表4</a></li>
+<li id="s6"><a href="https://www.lvliang.gov.cn/zjll/mlll/fqtc/200703/t20070308_233683.html">吕梁市政府：红枣产地介绍</a></li>
+<li id="s7"><a href="https://www.cnipa.gov.cn/attach/0/20250826010509.pdf">国家知识产权局：地理标志保护要求</a></li>
+<li id="s8"><a href="https://food.nwsuaf.edu.cn/zhdt/xsgz/1e5a6cfce6ee4a708928473733817b0f.htm">西北农林科技大学：实地调研，2026</a></li>
+<li id="s9"><a href="https://www.btdsss.gov.cn/c/2025-02-21/905421.shtml">新疆兵团二二四团：电商与物流</a></li>
+<li id="s10"><a href="https://www.forestry.gov.cn/c/www/slgs/593126.jhtml">国家林草局：新疆红枣全产业链</a></li>
+<li id="s11"><a href="https://lcj.shanxi.gov.cn/lczl/zthc/cyfz/ggjjl/202507/t20250703_9897495.html">山西省林草局：“一户田”，2025</a></li>
+<li id="s12"><a href="https://www.sxllnews.cn/xyllrb/pc/att/202604/25/997cb973-f3f9-4e48-abd5-a63258e9ab3c.pdf">吕梁日报：道路建设，2026</a></li>
+</ol></div></footer>
+</main></body></html>
